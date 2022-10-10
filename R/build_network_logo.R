@@ -60,7 +60,8 @@ build_network_logo <- function(position_data){
     "{network_data}",
     "</script>",
     "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js\"></script>",
-    "<svg style = \"width: 100%; height:320px; margin-top: -125px;\" id = \"cv_network_viz\"></svg>",
+    "<svg id = \"mylogo\"></svg>",
+    "<svg style = \"width: 100%; height:150px; margin-top: -125px;\" id = \"cv_network_viz\"></svg>",
     "<script>",
     "{viz_script}",
     "</script>"

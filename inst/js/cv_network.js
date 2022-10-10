@@ -1,4 +1,5 @@
 const data_json = document.querySelector("script[type='application/json']").textContent;
+
 const {edges, nodes} = JSON.parse(data_json);
 
 class MyHandler extends Paged.Handler {
@@ -7,10 +8,23 @@ class MyHandler extends Paged.Handler {
 	}
 
 	afterRendered (){
+	  print_logo();
 		plot_network();
 	}
 }
 Paged.registerHandlers(MyHandler);
+
+const print_logo = () => {
+  const logo = d3.select("svg#mylogo")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "-2 -2 216 95")
+      .classed("svg-content", true)
+      .append("path")
+      .attr("d", "M 0 0 H 86 V 91 Z L 51 91 L 108 0 V 91 H 124 V 0 H 212 V 17 H 176 V 91 H 124 H 0 V 0")
+      .attr("stroke", "#ff9900ff")
+      .attr("stroke-width","2")
+      .attr("fill", "#185abdff");
+}
 
 function plot_network(){
   const {width, height} = document.querySelector("svg#cv_network_viz").getBoundingClientRect();
