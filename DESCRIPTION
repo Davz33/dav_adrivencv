@@ -1,7 +1,7 @@
 Package: dav.adrivencv
 Type: Package
 Title: Custom Templates and helper functions for building my CV with spreadsheets, based on datadriven-cv from Nick Strayer
-Version: 0.2.2
+Version: 0.2.2.2
 URL: https://github.com/Davz33/dav_adrivencv, https://github.com/nstrayer/datadrivencv
 Author: Davide Vitiello
 Maintainer: Davide Vitiello <davide-vitiello@outlook.com>

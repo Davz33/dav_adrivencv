@@ -53,7 +53,7 @@ build_network_logo <- function(position_data){
                        edges = edges) %>%
     jsonlite::toJSON()
 
-  viz_script <- readr::read_file(system.file("js/cv_network.js", package = "datadrivencv"))
+  viz_script <- readr::read_file(system.file("js/cv_network.js", package = "dav.adrivencv"))
 
   glue::glue(
     "<script id = \"data_for_network\" type = \"application/json\">",
