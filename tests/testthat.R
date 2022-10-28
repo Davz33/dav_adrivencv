@@ -1,4 +1,4 @@
 library(testthat)
-library(datadrivencv)
+library(dav.adrivencv)
 
-test_check("datadrivencv")
+test_check("dav.adrivencv")

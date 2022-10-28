@@ -6,13 +6,13 @@ test_that("Rendering to HTML works", {
 
   # Setup data
   data_loc <- fs::path(temp_dir, "csv_data")
-  datadrivencv::use_csv_data_storage(
+  dav.adrivencv::use_csv_data_storage(
     folder_name = data_loc,
     create_output_dir = TRUE
   )
 
   # Setup files
-  datadrivencv::use_datadriven_cv(
+  dav.adrivencv::use_datadriven_cv(
     full_name = "Testing McTester",
     data_location = paste0(data_loc, "/"),
     output_dir = temp_dir,

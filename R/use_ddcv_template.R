@@ -27,7 +27,7 @@ use_ddcv_template <- function(
   }
 
 
-  template_loc <- fs::path(system.file("templates/", package = "datadrivencv"), file_name)
+  template_loc <- fs::path(system.file("templates/", package = "dav.adrivencv"), file_name)
   output_loc <- fs::path(output_dir, output_file_name)
 
   template_text <- readr::read_file(template_loc)

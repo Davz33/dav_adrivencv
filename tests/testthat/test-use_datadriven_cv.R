@@ -3,7 +3,7 @@ test_that("Addition of all files works", {
   # Make a temp directory for placing files
   temp_dir <- fs::dir_create(fs::path(tempdir(), "test_dir"))
 
-  datadrivencv::use_datadriven_cv(
+  dav.adrivencv::use_datadriven_cv(
     full_name = "Testing McTester",
     data_location = "here/be/my/data/",
     output_dir = temp_dir,
@@ -23,7 +23,7 @@ test_that("Addition of subset of files", {
   # Make a temp directory for placing files
   temp_dir <- fs::dir_create(fs::path(tempdir(), "test_dir"))
 
-  datadrivencv::use_datadriven_cv(
+  dav.adrivencv::use_datadriven_cv(
     full_name = "Testing McTester",
     data_location = "here/be/my/data/",
     output_dir = temp_dir,
@@ -49,7 +49,7 @@ test_that("Warns when trying to update a file with no change", {
 
 
   # First dump all files into directory
-  datadrivencv::use_datadriven_cv(
+  dav.adrivencv::use_datadriven_cv(
     full_name = "Testing McTester",
     data_location = "here/be/my/data/",
     output_dir = temp_dir,
@@ -59,7 +59,7 @@ test_that("Warns when trying to update a file with no change", {
 
   # Then try an update of the rmd file that has no changes
   expect_warning(
-    datadrivencv::use_datadriven_cv(
+    dav.adrivencv::use_datadriven_cv(
       full_name = "Testing McTester",
       data_location = "here/be/my/data/",
       output_dir = temp_dir,
@@ -72,7 +72,7 @@ test_that("Warns when trying to update a file with no change", {
 
   # Finally, do an update with a different name which should not give a warning
   testthat::expect_silent(
-    datadrivencv::use_datadriven_cv(
+    dav.adrivencv::use_datadriven_cv(
       full_name = "Testing McTester the second",
       data_location = "here/be/my/data/",
       output_dir = temp_dir,
@@ -93,7 +93,7 @@ test_that("Addition of all data csvs works", {
 
   # Wont make a new directory for you if you dont want it to
   expect_error(
-    datadrivencv::use_csv_data_storage(
+    dav.adrivencv::use_csv_data_storage(
       folder_name = fs::path(temp_dir, "csv_data"),
       create_output_dir = FALSE
     ),
@@ -106,7 +106,7 @@ test_that("Addition of all data csvs works", {
   )
 
   # Will make directory for you if you want it to
-  datadrivencv::use_csv_data_storage(
+  dav.adrivencv::use_csv_data_storage(
     folder_name = fs::path(temp_dir, "csv_data"),
     create_output_dir = TRUE
   )

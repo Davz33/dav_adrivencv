@@ -1,7 +1,7 @@
 library(here)
 
 
-datadrivencv::use_datadriven_cv(
+dav.adrivencv::use_datadriven_cv(
   full_name = "Testing McTester",
   # data_location = "https://docs.google.com/spreadsheets/d/1SC8dKPlPZDA1MECZr8xlJPitjWQ3AV4eXrPvnlNv7m8/",
   data_location = "https://docs.google.com/spreadsheets/d/14MQICF2F8-vf8CKPF1m4lyGKO6_thG-4aSwat1e2TWc",

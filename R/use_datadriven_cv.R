@@ -52,7 +52,7 @@
 #'
 #' @export
 use_datadriven_cv <- function(full_name = "Sarah Arcos",
-                              data_location = system.file("sample_data/", package = "datadrivencv"),
+                              data_location = system.file("sample_data/", package = "dav.adrivencv"),
                               pdf_location = "https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf",
                               html_location = "nickstrayer.me/datadrivencv/",
                               source_location = "https://github.com/nstrayer/datadrivencv",
